@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GoandDo</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="what_else_would_you_like_us_to_know">What else would you like us to know?</string>
+    <string name="type_your_feedback_here">Type your feedback here</string>
+    <string name="go_and_do">GO and DO</string>
+    <string name="you_can_join">You can join already today</string>
+    <string name="add_number">Add Number</string>
+    <string name="adding_a_ph">Adding a phone number to your account is a great step toward a better experience.</string>
+    <string name="submit">Submit</string>
+    <string name="otp_verific">OTP Verification</string>
+    <string name="we_sent_otp">We sent otp verification to your phone this code will expired in 01:35</string>
+    <string name="sign_in">Sign In</string>
+    <string name="let_s_explore_our_service">Let’s explore Our Service</string>
+    <string name="sign_in_your_account">Sign In your Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_sign_in_with_social">Or, Sign in with social</string>
+    <string name="don_t_have_account">Don\'t Have Account?</string>
+    <string name="sign_up">Sign up</string>
+</resources>

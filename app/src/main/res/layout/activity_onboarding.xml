@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whisper"
+    tools:context=".activities.OnboardingActivity">
+
+    <ImageView
+        android:id="@+id/go_and_do"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/go_and_do"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="1sp"
+        android:textSize="36sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/you_can_joi"
+        android:layout_width="209dp"
+        android:layout_height="21dp"
+        android:layout_below="@id/go_and_do"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="25sp"
+        android:text="@string/you_can_join"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/newlogo1_re"
+        android:layout_width="260dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/treelogo" />
+
+    <TextView
+        android:id="@+id/add_number"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/newlogo1_re"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/add_number"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:translationY="-0.37sp" />
+
+    <TextView
+        android:id="@+id/adding_a_ph"
+        android:layout_width="311dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/add_number"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="9sp"
+        android:text="@string/adding_a_ph"
+        android:textColor="@color/dark_gray"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adding_a_ph"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/number_edittext_background"
+        android:drawableStart="@drawable/usa"
+        android:elevation="150dp"
+        android:inputType="number"
+        android:paddingStart="32dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/signInOnboard_button"
+        android:layout_width="343dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/number"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/submit"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:elevation="30dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whisper"
+    tools:context=".activities.OtpVerificationActivity">
+
+    <ImageButton
+        android:id="@+id/base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/back_button_shape"
+        android:src="@drawable/back_arrow"/>
+
+    <TextView
+        android:id="@+id/otp_verific"
+        android:layout_width="202dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="89dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/otp_verific"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:translationY="-0.37sp" />
+
+
+    <TextView
+        android:id="@+id/otpText"
+        android:layout_width="198dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/otp_verific"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="89dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/otp_verific"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:translationY="-0.37sp" />
+
+    <TextView
+        android:id="@+id/we_sent_otp"
+        android:layout_width="311dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/otpText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/we_sent_otp"
+        android:textColor="@color/philippine_gray"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:translationY="-3.25sp" />
+
+    <EditText
+        android:id="@+id/otp_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/we_sent_otp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/otp_edittext_background"
+        android:elevation="30dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/otp_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/we_sent_otp"
+        android:layout_toEndOf="@id/otp_number1"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/otp_edittext_background"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="1"
+        android:elevation="30dp"/>
+
+
+    <EditText
+        android:id="@+id/otp_number3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/we_sent_otp"
+        android:layout_toEndOf="@id/otp_number2"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/otp_edittext_background"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="1"
+        android:elevation="30dp"/>
+
+    <EditText
+        android:id="@+id/otp_number4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/we_sent_otp"
+        android:layout_toEndOf="@id/otp_number3"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/otp_edittext_background"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="1"
+        android:elevation="30dp"/>
+
+    <EditText
+        android:id="@+id/otp_number5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/we_sent_otp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@id/otp_number4"
+        android:background="@drawable/otp_edittext_background"
+        android:elevation="30dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/otp_number6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/we_sent_otp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@id/otp_number5"
+        android:background="@drawable/otp_edittext_background"
+        android:elevation="30dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/signInOtp_button"
+        android:layout_width="343dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/otp_number6"
+        android:layout_marginTop="282dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:elevation="30dp"/>
+
+</RelativeLayout>
