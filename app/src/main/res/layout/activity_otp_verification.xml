@@ -68,27 +68,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/we_sent_otp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/otp_edittext_background"
         android:elevation="30dp"
         android:inputType="number"
         android:maxLength="1"
-        android:maxLines="1" />
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/otp_number2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/we_sent_otp"
-        android:layout_toEndOf="@id/otp_number1"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/otp_number1"
         android:background="@drawable/otp_edittext_background"
+        android:elevation="30dp"
         android:inputType="number"
-        android:maxLines="1"
         android:maxLength="1"
-        android:elevation="30dp"/>
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
 
     <EditText
@@ -101,8 +105,10 @@
         android:layout_marginStart="20dp"
         android:background="@drawable/otp_edittext_background"
         android:inputType="number"
-        android:maxLines="1"
         android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         android:elevation="30dp"/>
 
     <EditText
@@ -115,8 +121,10 @@
         android:layout_marginStart="20dp"
         android:background="@drawable/otp_edittext_background"
         android:inputType="number"
-        android:maxLines="1"
         android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         android:elevation="30dp"/>
 
     <EditText
@@ -131,7 +139,9 @@
         android:elevation="30dp"
         android:inputType="number"
         android:maxLength="1"
-        android:maxLines="1" />
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/otp_number6"
@@ -145,7 +155,9 @@
         android:elevation="30dp"
         android:inputType="number"
         android:maxLength="1"
-        android:maxLines="1" />
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
 
     <Button
         android:id="@+id/signInOtp_button"

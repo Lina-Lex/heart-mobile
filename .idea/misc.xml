@@ -13,7 +13,7 @@
         <entry key="app/src/main/res/drawable/password_edittext_background.xml" value="0.1355263157894737" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_otp_verification.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -26,7 +26,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.16" />
+        <option name="scale" value="0.18" />
       </ProjectState>
     </option>
   </component>

@@ -80,7 +80,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/email_edittext_background"
-        android:textColor="@color/black"/>
+        android:inputType="textEmailAddress"
+        android:paddingStart="14.11dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="17dp"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/password"
@@ -96,7 +100,7 @@
         android:textSize="16sp"
         android:translationY="-2.32sp" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/password_edittext"
         android:layout_width="335dp"
         android:layout_height="56dp"
@@ -107,7 +111,12 @@
         android:background="@drawable/password_edittext_background"
         android:backgroundTint="@color/white"
         android:elevation="10dp"
-        android:textColor="@color/black"/>
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="14dp"
+        android:textColor="@color/black"
+        />
 
     <CheckBox
         android:id="@+id/password_checkbox"
