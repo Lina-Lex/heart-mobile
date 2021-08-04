@@ -91,14 +91,13 @@
         android:layout_height="56dp"
         android:layout_below="@id/number"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="148dp"
-        android:layout_marginBottom="34dp"
         android:background="@drawable/button_shape"
+        android:elevation="30dp"
         android:text="@string/submit"
-        android:textSize="16sp"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:elevation="30dp"
-        />
+        android:textSize="16sp" />
 
 </RelativeLayout>
