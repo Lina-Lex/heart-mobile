@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/whisper">
+    android:background="@color/whisper"
+    tools:context=".activities.SignInActivity">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".activities.SignInActivity">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/back_icon"
@@ -129,7 +129,7 @@
 
         <CheckBox
             android:id="@+id/password_checkbox"
-            android:layout_width="match_parent"
+            android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_below="@id/password_edittext"
             android:layout_marginStart="20dp"
@@ -139,7 +139,7 @@
 
         <TextView
             android:id="@+id/remember_me"
-            android:layout_width="match_parent"
+            android:layout_width="106dp"
             android:layout_height="17dp"
             android:layout_below="@id/password_edittext"
             android:layout_marginStart="50dp"
@@ -152,7 +152,7 @@
 
         <TextView
             android:id="@+id/forgot_password"
-            android:layout_width="match_parent"
+            android:layout_width="128dp"
             android:layout_height="17dp"
             android:layout_below="@id/password_edittext"
             android:layout_marginStart="234dp"
@@ -228,6 +228,7 @@
             android:layout_marginStart="69dp"
             android:layout_marginEnd="137dp"
             android:layout_marginTop="69dp"
+            android:layout_marginBottom="29dp"
             android:gravity="top"
             android:text="@string/don_t_have_account"
             android:textColor="@color/philippine_gray"
@@ -241,6 +242,7 @@
             android:layout_marginStart="243dp"
             android:layout_marginEnd="68dp"
             android:layout_marginTop="69dp"
+            android:layout_marginBottom="29dp"
             android:gravity="top"
             android:text="@string/sign_up"
             android:textColor="@color/free_speech_blue"
