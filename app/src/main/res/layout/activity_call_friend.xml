@@ -4,73 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CallFriendActivity"
-    android:background="#F2F2F2">
+    android:background="@color/whisper"
+    tools:context=".activities.CallFriendActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/back_button_shape_2"
+        android:src="@drawable/ic_back_24"/>
 
     <TextView
-        android:layout_width="109dp"
-        android:layout_height="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/call_a_friend"
         android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="bold"
         android:textSize="18sp"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="152dp"
-        android:gravity="center_horizontal"/>
+        android:gravity="center"/>
 
-    <TextView
-        android:layout_width="148dp"
-        android:layout_height="20dp"
-        android:text="@string/hi_john_doe"
-        android:textColor="#040193"
-        android:textSize="18sp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="82dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="133dp"
-        android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:id="@+id/ll1">
 
-    <TextView
-        android:layout_width="180dp"
-        android:layout_height="20dp"
-        android:text="Do you want to call a friend?"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="115dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="122dp"
-        android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hi_john_doe"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#040193"
+            android:textSize="18sp"
+            android:gravity="center"/>
 
-    <View
-        android:layout_width="350dp"
-        android:layout_height="32dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="38dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="151dp"
-        android:background="@drawable/rectangle_6"
-        android:elevation="5dp"
-        android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you want to call a friend?"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"/>
 
-    <TextView
-        android:layout_width="148dp"
-        android:layout_height="20dp"
-        android:text="Friend List"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="208dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:gravity="center_horizontal"/>
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/custom_search_view"
+            android:elevation="20dp"
+            app:queryHint="Search your friends"
+            app:iconifiedByDefault="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friend List"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="45dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_below="@id/ll1"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="42dp"/>
 
