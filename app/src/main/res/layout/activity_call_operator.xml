@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/whisper"
-    tools:context=".activities.CallFriendActivity">
+    tools:context=".activities.CallOperatorActivity">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/call_a_friend"
+        android:text="@string/call_to_operator"
         android:textColor="@color/black"
         android:fontFamily="@font/poppins_regular"
         android:textStyle="bold"
@@ -45,46 +45,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you want to call a friend?"
+            android:text="Do you want to call the operator?"
             android:fontFamily="@font/poppins_regular"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:layout_marginTop="8dp"
             android:gravity="center"/>
 
-        <androidx.appcompat.widget.SearchView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/custom_search_view"
-            android:elevation="20dp"
-            app:queryHint="Search your friends"
-            app:iconifiedByDefault="false"/>
-
-        <TextView
-            android:id="@+id/txtFl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Friend List"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-
     </LinearLayout>
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ll1"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="42dp"
-        tools:listitem="@layout/contact_list_dummy_items"/>
 
 </RelativeLayout>

@@ -22,4 +22,5 @@
     <string name="sign_up">Sign up</string>
     <string name="call_a_friend">Call a Friend</string>
     <string name="hi_john_doe">Hi John Doe</string>
+    <string name="call_to_operator">Call to operator</string>
 </resources>
