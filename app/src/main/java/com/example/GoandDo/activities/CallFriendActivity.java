@@ -31,6 +31,7 @@ public class CallFriendActivity extends AppCompatActivity {
 
         MyAdapter adapter = new MyAdapter(this, sName, images);
         listView.setAdapter(adapter);
+        listView.setDivider(null);
     }
 
     class MyAdapter extends ArrayAdapter<String> {
