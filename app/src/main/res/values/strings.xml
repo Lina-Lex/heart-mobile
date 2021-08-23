@@ -20,4 +20,7 @@
     <string name="or_sign_in_with_social">Or, Sign in with social</string>
     <string name="don_t_have_account">Don\'t Have Account?</string>
     <string name="sign_up">Sign up</string>
+    <string name="call_a_friend">Call a Friend</string>
+    <string name="hi_john_doe">Hi John Doe</string>
+    <string name="call_to_operator">Call to operator</string>
 </resources>
