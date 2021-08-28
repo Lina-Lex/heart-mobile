@@ -17,8 +17,8 @@
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="335dp"
             android:layout_marginTop="68dp"
+            android:layout_marginEnd="335dp"
             android:background="@drawable/back_icon"
             android:backgroundTint="@color/blue_zodiac" />
 
@@ -197,7 +197,9 @@
             android:layout_below="@id/sign_in_to_"
             android:layout_marginStart="177dp"
             android:layout_marginTop="34dp"
-            android:background="@drawable/google_icon" />
+            android:layout_marginBottom="135dp"
+            android:layout_marginEnd="178dp"
+            android:background="@drawable/ic_google_icon" />
 
 
         <ImageView
@@ -207,17 +209,21 @@
             android:layout_below="@id/sign_in_to_"
             android:layout_marginStart="242dp"
             android:layout_marginTop="29dp"
-            android:background="@drawable/facebook_icon" />
+            android:layout_marginBottom="129dp"
+            android:layout_marginEnd="102dp"
+            android:background="@drawable/ic_facebook" />
 
 
         <ImageView
             android:id="@+id/vector"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="22dp"
+            android:layout_height="14dp"
             android:layout_below="@id/sign_in_to_"
-            android:layout_marginStart="105.07dp"
-            android:layout_marginTop="34dp"
-            android:background="@drawable/linkedin_icon" />
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="249.93dp"
+            android:layout_marginBottom="136dp"
+            android:background="@drawable/ic_linkedin" />
 
 
         <TextView
@@ -226,8 +232,8 @@
             android:layout_height="20dp"
             android:layout_below="@id/google_icon"
             android:layout_marginStart="69dp"
-            android:layout_marginEnd="137dp"
             android:layout_marginTop="69dp"
+            android:layout_marginEnd="137dp"
             android:layout_marginBottom="29dp"
             android:gravity="top"
             android:text="@string/don_t_have_account"
@@ -240,8 +246,8 @@
             android:layout_height="20dp"
             android:layout_below="@id/google_icon"
             android:layout_marginStart="243dp"
-            android:layout_marginEnd="68dp"
             android:layout_marginTop="69dp"
+            android:layout_marginEnd="68dp"
             android:layout_marginBottom="29dp"
             android:gravity="top"
             android:text="@string/sign_up"
