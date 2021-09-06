@@ -10,12 +10,10 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface APIInterface {
+
     @POST("/authenticate/get_otp")
     Call<JsonObject> get_otp(@Body JsonObject post);
 
-//    @FormUrlEncoded
-//    @POST("/authenticate/get_otp")
-//    Call<NumberModel> get_otp(
-//            @Field("phone") String phone_number
-//            );
+    @POST("/authenticate/validate_otp")
+    Call<JsonObject> validate_otp(@Body JsonObject post);
 }

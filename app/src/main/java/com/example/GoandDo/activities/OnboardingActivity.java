@@ -29,7 +29,7 @@ public class OnboardingActivity extends AppCompatActivity {
     Button btn_Submit;
     EditText number_edtxt;
 
-    private String TAG = "OnboardingActivity";
+    private final String TAG = "OnboardingActivity";
     private String phoneNumber;
     APIInterface apiInterface;
 
@@ -53,7 +53,7 @@ public class OnboardingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 phoneNumber = number_edtxt.getText().toString();
                 if (!phoneNumber.isEmpty()) {
-                    getOtp(ApiJsonMap(phoneNumber));
+                    getOtp(ApiJsonBody(phoneNumber));
 
                     startOtpVerificationActivity();
                 }
@@ -66,6 +66,7 @@ public class OnboardingActivity extends AppCompatActivity {
     //navigates to OtpVerificationActivity
     private void startOtpVerificationActivity() {
         Intent intent = new Intent(this, OtpVerificationActivity.class);
+        intent.putExtra("PhoneNUmber", phoneNumber);
         startActivity(intent);
     }
 
@@ -76,7 +77,7 @@ public class OnboardingActivity extends AppCompatActivity {
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
-                Log.i("on", "sent number" + response);
+                Log.i(TAG, "get Otp" + response.body());
             }
 
             @Override
@@ -86,8 +87,8 @@ public class OnboardingActivity extends AppCompatActivity {
         });
     }
 
-    //returns the Json Api body for the get_otp post request
-    private JsonObject ApiJsonMap(String phoneNumber) {
+    //returns the raw Json Api body for the get_otp post request
+    private JsonObject ApiJsonBody(String phoneNumber) {
 
         JsonObject gsonObject = new JsonObject();
         try {
