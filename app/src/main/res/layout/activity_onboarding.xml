@@ -86,19 +86,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/adding_a_ph"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="9dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="9dp"
         android:background="@drawable/number_edittext_background"
         android:drawableStart="@drawable/usa"
         android:elevation="150dp"
-        android:inputType="number"
+        android:inputType="phone"
         android:paddingStart="32dp"
         android:paddingTop="17dp"
         android:paddingBottom="16dp"
         android:textColor="@color/black" />
 
     <Button
-        android:id="@+id/signInOnboard_button"
+        android:id="@+id/submitOnboard_button"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_below="@id/number"
