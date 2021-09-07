@@ -14,6 +14,7 @@ import com.example.GoandDo.request.APIInterface;
 import com.example.GoandDo.utils.credentials;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.hbb20.CountryCodePicker;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,6 +29,8 @@ public class OnboardingActivity extends AppCompatActivity {
 
     Button btn_Submit;
     EditText number_edtxt;
+    CountryCodePicker ccp;
+
 
     private final String TAG = "OnboardingActivity";
     private String phoneNumber;
@@ -40,6 +43,9 @@ public class OnboardingActivity extends AppCompatActivity {
 
         btn_Submit = findViewById(R.id.submitOnboard_button);
         number_edtxt = findViewById(R.id.number);
+        ccp = (CountryCodePicker) findViewById(R.id.ccp);
+
+        ccp.registerCarrierNumberEditText(number_edtxt);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(credentials.BaseUrl)
@@ -51,8 +57,9 @@ public class OnboardingActivity extends AppCompatActivity {
         btn_Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                phoneNumber = number_edtxt.getText().toString();
-                if (!phoneNumber.isEmpty()) {
+                phoneNumber = ccp.getFullNumberWithPlus();
+                //checks if number is valid
+                if (ccp.isValidFullNumber()) {
                     getOtp(ApiJsonBody(phoneNumber));
 
                     startOtpVerificationActivity();
@@ -82,7 +89,7 @@ public class OnboardingActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<JsonObject> call, Throwable t) {
-
+              t.printStackTrace();
             }
         });
     }

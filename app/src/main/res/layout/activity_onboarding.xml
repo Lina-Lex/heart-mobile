@@ -9,110 +9,128 @@
     tools:context=".activities.OnboardingActivity">
 
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <ImageView
-        android:id="@+id/go_and_do"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginTop="66dp"
-        android:background="@drawable/go_and_do"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="1sp"
-        android:textSize="36sp"
-        android:textStyle="normal" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/you_can_joi"
-        android:layout_width="match_parent"
-        android:layout_height="21dp"
-        android:layout_below="@id/go_and_do"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="83dp"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="25sp"
-        android:text="@string/you_can_join"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="normal" />
+        <ImageView
+            android:id="@+id/go_and_do"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/go_and_do"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="1sp"
+            android:textSize="36sp"
+            android:textStyle="normal" />
 
-    <ImageView
-        android:id="@+id/newlogo1_re"
-        android:layout_width="match_parent"
-        android:layout_height="208dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginTop="128dp"
-        android:background="@drawable/treelogo" />
+        <TextView
+            android:id="@+id/you_can_joi"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_below="@id/go_and_do"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="83dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="25sp"
+            android:text="@string/you_can_join"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
 
-    <TextView
-        android:id="@+id/add_number"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_below="@id/newlogo1_re"
-        android:layout_marginStart="108dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal|top"
-        android:lineSpacingExtra="1sp"
-        android:text="@string/add_number"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="normal"
-        android:translationY="-0.37sp" />
+        <ImageView
+            android:id="@+id/newlogo1_re"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="58dp"
+            android:background="@drawable/treelogo" />
 
-    <TextView
-        android:id="@+id/adding_a_ph"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_below="@id/add_number"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="center_horizontal|top"
-        android:lineSpacingExtra="9sp"
-        android:text="@string/adding_a_ph"
-        android:textColor="@color/dark_gray"
-        android:textStyle="normal" />
+        <TextView
+            android:id="@+id/add_number"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/newlogo1_re"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="108dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/add_number"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:translationY="-0.37sp" />
 
-    <EditText
-        android:id="@+id/number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/adding_a_ph"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="9dp"
-        android:background="@drawable/number_edittext_background"
-        android:drawableStart="@drawable/usa"
-        android:elevation="150dp"
-        android:inputType="phone"
-        android:paddingStart="32dp"
-        android:paddingTop="17dp"
-        android:paddingBottom="16dp"
-        android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/adding_a_ph"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@id/add_number"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="9sp"
+            android:text="@string/adding_a_ph"
+            android:textColor="@color/dark_gray"
+            android:textStyle="normal" />
 
-    <Button
-        android:id="@+id/submitOnboard_button"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_below="@id/number"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="34dp"
-        android:background="@drawable/button_shape"
-        android:elevation="30dp"
-        android:text="@string/submit"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        <LinearLayout
+            android:id="@+id/number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adding_a_ph"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/number_edittext_background">
 
-</RelativeLayout>
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                app:ccpDialog_backgroundColor="@color/whisper"
+                app:ccpDialog_textColor="@color/black"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_autoFormatNumber="true"
+                app:ccp_countryPreference="US"
+                app:ccp_showNameCode="false" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:elevation="150dp"
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitOnboard_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/number_layout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/button_shape"
+            android:elevation="30dp"
+            android:text="@string/submit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
 
 </ScrollView>
