@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.GoandDo.R;
 import com.example.GoandDo.request.APIInterface;
@@ -29,7 +33,9 @@ public class OnboardingActivity extends AppCompatActivity {
 
     Button btn_Submit;
     EditText number_edtxt;
+    TextView goAndDo_tv;
     CountryCodePicker ccp;
+    TextView checkIcon_tv;
 
 
     private final String TAG = "OnboardingActivity";
@@ -42,10 +48,14 @@ public class OnboardingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_onboarding);
 
         btn_Submit = findViewById(R.id.submitOnboard_button);
+        goAndDo_tv = findViewById(R.id.go_and_do);
+        checkIcon_tv = findViewById(R.id.check_icon);
         number_edtxt = findViewById(R.id.number);
         ccp = (CountryCodePicker) findViewById(R.id.ccp);
 
         ccp.registerCarrierNumberEditText(number_edtxt);
+
+        styleGoandDo_textView();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(credentials.BaseUrl)
@@ -67,6 +77,21 @@ public class OnboardingActivity extends AppCompatActivity {
 
             }
         });
+
+
+        ccp.setPhoneNumberValidityChangeListener(new CountryCodePicker.PhoneNumberValidityChangeListener() {
+            @Override
+            public void onValidityChanged(boolean isValidNumber) {
+                if(isValidNumber){
+                    //displays the check icon whenever the phone number is valid
+                    checkIcon_tv.setVisibility(View.VISIBLE);
+                }
+                else {
+                    checkIcon_tv.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
 
     }
 
@@ -112,6 +137,23 @@ public class OnboardingActivity extends AppCompatActivity {
         }
 
         return gsonObject;
+    }
+
+    //This method is for styling the GoandGo TextView
+    private void styleGoandDo_textView(){
+        String text = getResources().getString(R.string.go_and_do);
+
+        SpannableString ss = new SpannableString(text);
+
+        //specifies the colors to be used for the text color
+        ForegroundColorSpan fcs_DarkPastelGreen = new ForegroundColorSpan(getResources().getColor(R.color.dark_pastel_green));
+        ForegroundColorSpan fcs_FreeSpeechBlue =  new ForegroundColorSpan(getResources().getColor(R.color.free_speech_blue));
+
+        //Changes the color of the text to which the span is attached.
+        ss.setSpan(fcs_DarkPastelGreen, 0,2, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(fcs_FreeSpeechBlue, 3,9, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        goAndDo_tv.setText(ss);
     }
 
 }

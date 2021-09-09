@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.chaos.view.PinView;
@@ -30,7 +31,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class OtpVerificationActivity extends AppCompatActivity {
 
     Button btn_signIn;
-    PinView otpPin_edtxt;
+    PinView pinView;
+    ImageView back_btn;
 
     private final String TAG = "OtpVerificationActivity";
     String phoneNumber;
@@ -43,7 +45,8 @@ public class OtpVerificationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_otp_verification);
 
         btn_signIn = findViewById(R.id.signInOtp_button);
-        otpPin_edtxt = findViewById(R.id.otp_pin);
+        pinView = findViewById(R.id.otp_pin);
+        back_btn = findViewById(R.id.verif_back_btn);
 
 
         phoneNumber = getIntent().getStringExtra("PhoneNUmber");
@@ -54,18 +57,48 @@ public class OtpVerificationActivity extends AppCompatActivity {
                 .build();
         apiInterface = retrofit.create(APIInterface.class);
 
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //navigates back to previous activity
+                finish();
+            }
+        });
 
         btn_signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                otp = otpPin_edtxt.getText().toString();
+                otp = pinView.getText().toString();
                 if (!otp.isEmpty()) {
                     validateOtp(ApiJsonBody(phoneNumber, otp));
                 }
+            }
+        });
 
+        pinView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+                //gets the count of the characters in the pinView
+                int count = Integer.parseInt(String.valueOf(charSequence.length()));
+                // Validates the otp  automatically when the pinView has been filled
+                if(count==6){
+                    otp = pinView.getText().toString();
+                    validateOtp(ApiJsonBody(phoneNumber, otp));
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
 
             }
         });
+
 
     }
 

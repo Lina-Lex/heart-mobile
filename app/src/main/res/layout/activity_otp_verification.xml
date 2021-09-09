@@ -13,11 +13,11 @@
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/base"
+            android:id="@+id/verif_back_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="45dp"
             android:layout_marginEnd="315dp"
             android:background="@drawable/back_button_shape"
             android:src="@drawable/back_arrow" />
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginStart="84dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="89dp"
             android:gravity="top"
             android:lineSpacingExtra="1sp"
@@ -72,25 +72,27 @@
 
         <com.chaos.view.PinView
             android:id="@+id/otp_pin"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/we_sent_otp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="70dp"
             android:cursorVisible="true"
             android:elevation="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:gravity="center_horizontal"
             android:inputType="number"
             android:itemBackground="@color/white"
             android:maxLength="1"
             android:textColor="@color/black"
             android:textCursorDrawable="@drawable/edittext_cursor"
-            android:textSize="22sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             app:itemCount="6"
+            app:itemSpacing="12dp"
             app:itemRadius="12dp"
-            app:lineColor="@color/white"
-            android:focusable="true"
-            android:focusableInTouchMode="true"/>
+            app:lineColor="@color/white" />
 
 
         <Button
