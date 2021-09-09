@@ -2,12 +2,14 @@ package com.example.GoandDo.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.chaos.view.PinView;
 import com.example.GoandDo.R;
@@ -57,20 +59,28 @@ public class OtpVerificationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 otp = otpPin_edtxt.getText().toString();
-                if (!phoneNumber.isEmpty()) {
+                if (!otp.isEmpty()) {
                     validateOtp(ApiJsonBody(phoneNumber, otp));
                 }
+
+
             }
         });
 
     }
 
+    //validates the otp
     private void validateOtp(JsonObject ApiBody) {
         Call<JsonObject> call = apiInterface.validate_otp(ApiBody);
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
-                Log.i(TAG, "Validate Otp" + response.body());
+                Log.i(TAG, "Validate Otp" + response.code());
+                //checks if otp is successfully validated
+                if(response.code()==200){
+                    Log.i(TAG, "Switching to signIn Activity");
+                    startSignInActivity();
+                }
             }
 
             @Override
@@ -99,6 +109,11 @@ public class OtpVerificationActivity extends AppCompatActivity {
         }
 
         return gsonObject;
+    }
+
+    private void startSignInActivity() {
+        Intent intent = new Intent(this, SignInActivity.class);
+        startActivity(intent);
     }
 
 

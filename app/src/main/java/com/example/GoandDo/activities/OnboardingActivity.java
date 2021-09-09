@@ -57,9 +57,9 @@ public class OnboardingActivity extends AppCompatActivity {
         btn_Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                phoneNumber = ccp.getFullNumberWithPlus();
                 //checks if number is valid
                 if (ccp.isValidFullNumber()) {
+                    phoneNumber = ccp.getFullNumberWithPlus();
                     getOtp(ApiJsonBody(phoneNumber));
 
                     startOtpVerificationActivity();
@@ -89,7 +89,7 @@ public class OnboardingActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<JsonObject> call, Throwable t) {
-              t.printStackTrace();
+                t.printStackTrace();
             }
         });
     }

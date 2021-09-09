@@ -72,13 +72,10 @@
 
         <com.chaos.view.PinView
             android:id="@+id/otp_pin"
-            style="@style/PinWidget.PinView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/we_sent_otp"
-            android:layout_marginStart="35dp"
             android:layout_marginTop="70dp"
-            android:layout_marginEnd="30dp"
             android:cursorVisible="true"
             android:elevation="30dp"
             android:gravity="center_horizontal"
@@ -92,7 +89,8 @@
             app:itemCount="6"
             app:itemRadius="12dp"
             app:lineColor="@color/white"
-            app:lineWidth="1dp" />
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
 
 
         <Button
