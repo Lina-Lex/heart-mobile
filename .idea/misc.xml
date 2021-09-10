@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/number_edittext_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/otp_edittext_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/password_edittext_background.xml" value="0.1355263157894737" />
+        <entry key="app/src/main/res/drawable/signin_edittext_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_call_friend.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_call_operator.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.12" />

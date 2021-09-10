@@ -90,8 +90,8 @@
             android:textSize="25sp"
             android:textStyle="bold"
             app:itemCount="6"
-            app:itemSpacing="12dp"
             app:itemRadius="12dp"
+            app:itemSpacing="12dp"
             app:lineColor="@color/white" />
 
 
