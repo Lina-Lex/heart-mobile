@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,97 +8,156 @@
     android:background="@color/whisper"
     tools:context=".activities.OnboardingActivity">
 
-    <ImageView
-        android:id="@+id/go_and_do"
-        android:layout_width="213dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="66dp"
-        android:background="@drawable/go_and_do"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="1sp"
-        android:textSize="36sp"
-        android:textStyle="normal" />
 
-    <TextView
-        android:id="@+id/you_can_joi"
-        android:layout_width="209dp"
-        android:layout_height="21dp"
-        android:layout_below="@id/go_and_do"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center_vertical"
-        android:lineSpacingExtra="25sp"
-        android:text="@string/you_can_join"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="normal" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/newlogo1_re"
-        android:layout_width="260dp"
-        android:layout_height="208dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="128dp"
-        android:background="@drawable/treelogo" />
 
-    <TextView
-        android:id="@+id/add_number"
-        android:layout_width="179dp"
-        android:layout_height="30dp"
-        android:layout_below="@id/newlogo1_re"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal|top"
-        android:lineSpacingExtra="1sp"
-        android:text="@string/add_number"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="normal"
-        android:translationY="-0.37sp" />
+        <TextView
+            android:id="@+id/go_and_do"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="81dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="1sp"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            />
 
-    <TextView
-        android:id="@+id/adding_a_ph"
-        android:layout_width="311dp"
-        android:layout_height="52dp"
-        android:layout_below="@id/add_number"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal|top"
-        android:lineSpacingExtra="9sp"
-        android:text="@string/adding_a_ph"
-        android:textColor="@color/dark_gray"
-        android:textStyle="normal" />
+        <TextView
+            android:id="@+id/you_can_joi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/go_and_do"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="83dp"
+            android:lineSpacingExtra="25sp"
+            android:text="@string/you_can_join"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
 
-    <EditText
-        android:id="@+id/number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/adding_a_ph"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/number_edittext_background"
-        android:drawableStart="@drawable/usa"
-        android:elevation="150dp"
-        android:inputType="number"
-        android:paddingStart="32dp"
-        android:paddingTop="17dp"
-        android:paddingBottom="16dp"
-        android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/newlogo1_re"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="58dp"
+            android:background="@drawable/treelogo" />
 
-    <Button
-        android:id="@+id/signInOnboard_button"
-        android:layout_width="343dp"
-        android:layout_height="56dp"
-        android:layout_below="@id/number"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="148dp"
-        android:background="@drawable/button_shape"
-        android:elevation="30dp"
-        android:text="@string/submit"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/add_number"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/newlogo1_re"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="108dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/add_number"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:translationY="-0.37sp" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/adding_a_ph"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@id/add_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="9sp"
+            android:text="@string/adding_a_ph"
+            android:textColor="@color/dark_gray"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:id="@+id/number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adding_a_ph"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/number_edittext_background"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:ccpDialog_backgroundColor="@color/whisper"
+                app:ccpDialog_textColor="@color/black"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_autoFormatNumber="true"
+                app:ccp_countryPreference="US"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="18sp" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/ccp"
+                android:elevation="150dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/check_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="330dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/ic_check"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submitOnboard_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/number_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/button_shape"
+            android:elevation="30dp"
+            android:text="@string/submit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

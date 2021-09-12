@@ -6,14 +6,20 @@
         <entry key="app/src/main/res/drawable/back_button_shape.xml" value="0.10092592592592593" />
         <entry key="app/src/main/res/drawable/button_shape.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/checkbox_background.xml" value="0.1355263157894737" />
+        <entry key="app/src/main/res/drawable/edittext_cursor.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/email_edittext_background.xml" value="0.1355263157894737" />
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/number_edittext_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/otp_edittext_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/password_edittext_background.xml" value="0.1355263157894737" />
-        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.16" />
+        <entry key="app/src/main/res/drawable/signin_edittext_background.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_call_friend.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_call_operator.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.12" />
         <entry key="app/src/main/res/layout/activity_otp_verification.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/contact_list_dummy_items.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -26,7 +32,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.18" />
+        <option name="scale" value="0.12" />
       </ProjectState>
     </option>
   </component>
