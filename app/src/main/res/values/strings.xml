@@ -23,4 +23,8 @@
     <string name="call_a_friend">Call a Friend</string>
     <string name="hi_john_doe">Hi John Doe</string>
     <string name="call_to_operator">Call to operator</string>
+    <string name="push_notifications">Push notifications</string>
+    <string name="go_and_do_application_would_like_to_send_you_push_notificatons">Go and Do application would like to send you push notificatons</string>
+    <string name="don_t_allow">Don’t allow</string>
+    <string name="allow">Allow</string>
 </resources>

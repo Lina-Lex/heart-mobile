@@ -10,16 +10,19 @@
         <entry key="app/src/main/res/drawable/email_edittext_background.xml" value="0.1355263157894737" />
         <entry key="app/src/main/res/drawable/ic_check.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/notification_alertdialog_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/number_edittext_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/otp_edittext_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/password_edittext_background.xml" value="0.1355263157894737" />
         <entry key="app/src/main/res/drawable/signin_edittext_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_call_friend.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_call_operator.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.10614035087719298" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.12" />
         <entry key="app/src/main/res/layout/activity_otp_verification.xml" value="0.12" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.18" />
         <entry key="app/src/main/res/layout/contact_list_dummy_items.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/notification_alertdialog.xml" value="0.22" />
       </map>
     </option>
   </component>
@@ -32,7 +35,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.12" />
+        <option name="scale" value="0.22" />
       </ProjectState>
     </option>
   </component>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.GoandDo">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,35 +11,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoandDo">
-        <activity android:name=".activities.CallFriendActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <activity android:name=".activities.CallOperatorActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
-
         <activity
-            android:name=".activities.SignInActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.OtpVerificationActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.OnboardingActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-
+            android:name=".activities.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.CallFriendActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.CallOperatorActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.SignInActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OtpVerificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OnboardingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <meta-data

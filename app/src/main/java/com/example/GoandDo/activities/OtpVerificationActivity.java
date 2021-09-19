@@ -87,7 +87,7 @@ public class OtpVerificationActivity extends AppCompatActivity {
                 //gets the count of the characters in the pinView
                 int count = Integer.parseInt(String.valueOf(charSequence.length()));
                 // Validates the otp  automatically when the pinView has been filled
-                if(count==6){
+                if (count == 6) {
                     otp = pinView.getText().toString();
                     validateOtp(ApiJsonBody(phoneNumber, otp));
                 }
@@ -110,9 +110,11 @@ public class OtpVerificationActivity extends AppCompatActivity {
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
                 Log.i(TAG, "Validate Otp" + response.code());
                 //checks if otp is successfully validated
-                if(response.code()==200){
+                if (response.code() == 200) {
                     Log.i(TAG, "Switching to signIn Activity");
-                    startSignInActivity();
+                    startMainActivity();
+                    //                    startSignInActivity();
+
                 }
             }
 
@@ -146,6 +148,11 @@ public class OtpVerificationActivity extends AppCompatActivity {
 
     private void startSignInActivity() {
         Intent intent = new Intent(this, SignInActivity.class);
+        startActivity(intent);
+    }
+
+    private void startMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
